@@ -13,6 +13,10 @@ module.exports = {
         filename: 'bundle.js',
         publicPath: '/build/'
     },
+    plugins: [
+        new webpack.HotModuleReplacementPlugin(),
+        new webpack.NoErrorsPlugin()
+    ],
     module: {
     loaders: [ 
     { // 参照的这个日志（http://jamesknelson.com/unlocking-decorators-and-other-es7-features-with-webpack-and-babel/）里的评论
