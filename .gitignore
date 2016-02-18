@@ -1,2 +1,4 @@
 babelrc.json
 node_modules
+build/bundle.js
+.idea

@@ -4,8 +4,8 @@ var webpack = require('webpack');
 
 module.exports = {
     entry: [
-      'webpack/hot/only-dev-server',
-      'webpack-dev-server/client?http://localhost:8080',
+      //'webpack/hot/only-dev-server',
+      //'webpack-dev-server/client?http://localhost:8080',
        './app/main.js'
     ],
     output: {
@@ -18,11 +18,7 @@ module.exports = {
         test: /\.js$/,
         loaders: ['babel'],
         exclude: /node_modules/
-      },
-        {
-        test: /node_modules\/react-colorpickr\/.*\.js/,
-        loader: "babel-loader"
-      }
+    }
       ]
   }
 };
