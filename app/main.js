@@ -1,6 +1,6 @@
 'use strict';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Hello from './Hello';
+import HelloWorld from './Hello';
 
-ReactDOM.render(<Hello />, document.getElementById('app'));
+ReactDOM.render(<HelloWorld />, document.getElementById('app'));

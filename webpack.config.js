@@ -13,16 +13,17 @@ module.exports = {
         filename: 'bundle.js',
     },
     module: {
-    loaders: [  
+    loaders: [ 
     { // 参照的这个日志（http://jamesknelson.com/unlocking-decorators-and-other-es7-features-with-webpack-and-babel/）里的评论
         test: /\.js$/,
         loaders: ['babel'],
         exclude: /node_modules/
       },
-    {
+        {
         test: /node_modules\/react-colorpickr\/.*\.js/,
         loader: "babel-loader"
-      }]
+      }
+      ]
   }
 };
 
